@@ -1,0 +1,19 @@
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# notebooks
+.ipynb_checkpoints/
+
+# data & artifacts (do not commit large files)
+data/raw/
+data/processed/
+indexes/
+models/
+
+# OS
+.DS_Store
+Thumbs.db
