@@ -1,3 +1,20 @@
+## Fork Notice
+
+This repository is a fork of:  
+https://github.com/t-redactyl/llm-semantic-book-recommender
+
+Purpose of this fork:  
+Refactoring the original notebook-based implementation into a maintainable, project-oriented structure.
+
+Planned extension:  
+Integration of a Retrieval-Augmented Generation (RAG) pipeline for incorporating custom/internal data sources.
+
+Key structural changes:
+- Introduced a modular `src/` project structure
+- Added configuration management
+- Improved dependency organization
+- Separated experimental notebooks from core logic
+
 # Build a Semantic Book Recommender with LLMs – Full Course
 
 This repo contains all of the code to complete the freeCodeCamp course, "Build a Semantic Book Recommender with LLMs – Full Course". There are five components to this tutorial:
