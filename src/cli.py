@@ -4,6 +4,8 @@ import typer
 
 from bookrec.index import build_chroma
 from bookrec.settings import Paths
+import runpy
+runpy.run_path("app/gradio_app.py", run_name="__main__")
 
 app = typer.Typer(add_completion=False)
 

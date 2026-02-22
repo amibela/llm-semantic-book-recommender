@@ -31,13 +31,19 @@ When already generated  in the tutorial folder, just move them into `data/proces
 ### 4) Build the vector DB (persisted)
 ```bash
 python -m src.cli build-index
-```
 
+``` 
+
+``` Powershell
+python src/cli.py build-index
+```
 ### 5) Run the UI
 ```bash
 python -m src.cli run-app
 ```
-
+``` Powershell
+python src/cli.py run-app
+```
 ## Notes on versioning
 Do **not** commit `data/`, `indexes/`, or `models/` (already in `.gitignore`).
 If you want a reproducible repo, upload a small sample dataset or add download scripts.

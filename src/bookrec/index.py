@@ -1,5 +1,6 @@
 from __future__ import annotations
-
+from dotenv import load_dotenv
+load_dotenv()
 from typing import Iterable
 
 from langchain_chroma import Chroma
@@ -14,7 +15,7 @@ def build_documents(tagged_description_path: str | None = None):
     paths = Paths()
     src_path = paths.TAGGED_DESCRIPTION if tagged_description_path is None else tagged_description_path
 
-    raw_documents = TextLoader(str(src_path)).load()
+    raw_documents = TextLoader(str(src_path),encoding="utf-8").load()
     # One record per line; do not chunk across lines
     splitter = CharacterTextSplitter(separator="\n", chunk_size=0, chunk_overlap=0)
     return splitter.split_documents(raw_documents)
